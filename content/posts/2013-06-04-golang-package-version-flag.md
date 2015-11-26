@@ -10,6 +10,7 @@ keywords:
 comments: true
 date: '2013-06-04'
 title: Golang Package Version Flag
+description: How to implement a version flag for golang packages
 url: /2013/06/04/golang-package-version-flag
 ---
 

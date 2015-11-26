@@ -9,6 +9,8 @@ keywords:
 comments: true
 date: '2015-01-31'
 title: Custom Vagrant Cloud Versioned Box Host
+description: How to use a custom hosted Vagrant box to mimic how Vagrant Cloud looks for boxes and handles box versions
+url: /2015/01/31/custom-vagrant-cloud-host
 ---
 
 With the recent addition of [Atlas](https://atlas.hashicorp.com) to the [Hashicorp](https://hashicorp.com)

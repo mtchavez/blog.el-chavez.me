@@ -11,6 +11,7 @@ keywords:
 comments: true
 date: '2013-08-29'
 title: Golang Documenting Package Examples
+description: Example of documenting golang packages
 url: /2013/08/29/golang-documenting-package-examples
 ---
 

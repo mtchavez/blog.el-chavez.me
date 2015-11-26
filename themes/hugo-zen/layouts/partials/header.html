@@ -12,7 +12,7 @@
 <link rel="alternate" href="/index.xml" type="application/rss+xml" title="{{ .Site.Title }}">
 <title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
 <meta content="{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}" property="og:title">
-<meta content="{{ .Site.Params.description }}" property="og:description">
+<meta content="{{ $isHomePage := eq .Title .Site.Title }}{{ .Site.Params.description }}{{ if eq $isHomePage false }} - {{ .Description }}{{ end }}" property="og:description">
 <meta content="//blog.el-chavez.me/images/logo.png" property="og:image">
 <meta content="{{ delimit .Keywords ", " }}" name="keywords">
 </head>

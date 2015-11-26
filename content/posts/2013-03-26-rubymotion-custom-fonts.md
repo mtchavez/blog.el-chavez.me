@@ -11,6 +11,7 @@ keywords:
 comments: true
 date: '2013-03-26'
 title: Rubymotion Custom Fonts
+description: How to use custom fonts in your Ruby Motion apps
 url: /2013/03/26/rubymotion-custom-fonts
 ---
 

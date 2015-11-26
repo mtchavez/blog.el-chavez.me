@@ -8,6 +8,7 @@ keywords:
 comments: true
 date: '2013-05-17'
 title: Golang Current File Path
+description: How to get the current file path in golang
 url: /2013/05/17/golang-current-file-path
 ---
 

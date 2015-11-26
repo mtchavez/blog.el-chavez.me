@@ -10,6 +10,7 @@ keywords:
 comments: true
 date: '2013-08-09'
 title: Golang Timed Function Wrapper
+description: Example of timing function calls in golang
 url: /2013/08/09/golang-timed-function-wrapper
 ---
 
