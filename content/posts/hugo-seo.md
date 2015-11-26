@@ -8,6 +8,7 @@ comments: true
 date: '2015-11-26'
 title: Go Hugo SEO
 description: Some simple things to do with Hugo for SEO and dynamic page content
+url: /2015/11/26/go-hugo-seo
 ---
 
 [Hugo](http://gohugo.io) is a static site generator that has caught on for its
