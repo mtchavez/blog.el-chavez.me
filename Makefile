@@ -3,7 +3,7 @@ S3_BUCKET?=my-bucket
 AWS_DEFAULT_REGION?=us-west-2
 
 all:
-	hugo server --theme $(HUGO_THEME) --watch
+	hugo server --theme $(HUGO_THEME) --watch --buildDrafts true
 
 release:
 	hugo -d deploy --theme=$(HUGO_THEME) && \
