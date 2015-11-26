@@ -1,0 +1,14 @@
+baseurl            = "http://blog.el-chavez.me"
+languageCode       = "en-us"
+title              = "Chavez Blog"
+author             = "mtchavez"
+disablePathToLower = true
+
+[params]
+  description  = "Technical related blog posts by github.com/mtchavez"
+  languageCode = "en-us"
+  logo         = "/images/logo.png"
+  copyright    = "mtchavez All rights reserved."
+  github       = "https://github.com/mtchavez/"
+  email        = "contact@el-chavez.me"
+  analytics    = "UA-40822664-1"
