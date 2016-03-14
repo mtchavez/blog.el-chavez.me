@@ -1,4 +1,4 @@
-baseurl            = "https://blog.el-chavez.me"
+baseurl            = "//blog.el-chavez.me"
 languageCode       = "en-us"
 title              = "Chavez Blog"
 author             = "mtchavez"
