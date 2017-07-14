@@ -23,7 +23,9 @@ analytics    = "UA-40822664-1"
 [params.highlight]
 style     = "solarized-dark"
 languages = [
+  "bash",
   "dockerfile",
+  "elixir",
   "go",
   "javascript",
   "json",
