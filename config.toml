@@ -3,12 +3,42 @@ languageCode       = "en-us"
 title              = "Chavez Blog"
 author             = "mtchavez"
 disablePathToLower = true
+theme              = "Hucore"
+googleAnalytics    = "UA-40822664-1"
+
+[taxonomies]
+tag      = "tags"
+category = "categories"
 
 [params]
-  description  = "Technical related blog posts by github.com/mtchavez"
-  languageCode = "en-us"
-  logo         = "/images/logo.png"
-  copyright    = "mtchavez All rights reserved."
-  github       = "https://github.com/mtchavez/"
-  email        = "contact@el-chavez.me"
-  analytics    = "UA-40822664-1"
+description  = "Technical related blog posts by github.com/mtchavez"
+author       = "mtchavez"
+languageCode = "en-us"
+logo         = "/images/logo.png"
+copyright    = "mtchavez All rights reserved."
+github       = "https://github.com/mtchavez/"
+email        = "contact@el-chavez.me"
+analytics    = "UA-40822664-1"
+
+[params.highlight]
+style     = "solarized-dark"
+languages = [
+  "dockerfile",
+  "go",
+  "javascript",
+  "json",
+  "ruby",
+  "yaml"
+]
+
+[[params.social]]
+url     = "https://github.com/mtchavez"
+fa_icon = "fa-github"
+
+[[params.social]]
+url     = "https://gitlab.com/mtchavez"
+fa_icon = "fa-gitlab"
+
+[[params.social]]
+url     = "/index.xml"
+fa_icon = "fa-rss"

@@ -7,20 +7,24 @@ keywords:
 - golang
 - golang timing
 - golang interfaces
+tags:
+- go
+- golang
+- golang timing
+- golang interfaces
 comments: true
 date: '2013-08-09'
 title: Golang Timed Function Wrapper
 description: Example of timing function calls in golang
 url: /2013/08/09/golang-timed-function-wrapper
 ---
-
-
 Wrote this quick and probably dirty wrapper for timing functions in Go.
 `TimedReturn` returns an `interface{}` in case a return value is needed
 from whatever you are wrapping.
 
 <!--more-->
-{{<highlight go>}}
+
+```go
 package main
 
 import (
@@ -61,4 +65,4 @@ func main() {
   returned := TimedReturn(fn2, "go.playground")
   fmt.Println("TimedReturn got:", returned.([]int))
 }
-{{</highlight>}}
+```

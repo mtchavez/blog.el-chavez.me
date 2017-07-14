@@ -1,4 +1,4 @@
-HUGO_THEME?=hugo-zen
+HUGO_THEME?=hucore
 S3_BUCKET?=my-bucket
 AWS_DEFAULT_REGION?=us-west-2
 

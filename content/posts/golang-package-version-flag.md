@@ -7,6 +7,11 @@ keywords:
 - golang
 - golang flag
 - golang versioning
+tags:
+- go
+- golang
+- golang flag
+- golang versioning
 comments: true
 date: '2013-06-04'
 title: Golang Package Version Flag
@@ -14,21 +19,22 @@ description: How to implement a version flag for golang packages
 url: /2013/06/04/golang-package-version-flag
 ---
 
-
 So you’ve built your first service using Go and have it deployed out into your
 production environment. With cross compiling built into Go it’s easy and almost
-trivial to build a new binary of your code and deploy updates. But what happens
-when you need to know what version of your code is where or how can you easily
-verify your new binary was deployed.
+trivial to build a new binary of your code and deploy updates.
+
+<!--more-->
+
+But what happens when you need to know what version of your code is where or
+how can you easily verify your new binary was deployed.
 
 There is a built in library in Go that handles flag parsing, the flag package.
 Using the flag package is straight forward and allows us to use flags to pass
 to our binary to print a version out.
 
 First lets start with a main package that imports the flag package.
-<!--more-->
 
-{{<highlight go>}}
+```go
 package main
 
 import (
@@ -40,7 +46,7 @@ func main() {
     flag.Parse()
     fmt.Println("Hello from main()")
 }
-{{</highlight>}}
+```
 
 If you have the file in your $GOROOT as main.go then run `go build main.go`
 and after running `./main` you should see:
@@ -55,7 +61,7 @@ parse any flags passed to the program. Since we did not pass anything it does
 not have to do any work here. Now lets add a version flag to parse so we can
 print the version of our program.
 
-{{<highlight go>}}
+```go
 package main
 
 import (
@@ -75,7 +81,7 @@ func main() {
     }
     fmt.Println("Hello from main()")
 }
-{{</highlight>}}
+```
 
 We first start by adding a definition of our version flag. It will be a boolean
 flag with a name of v, a default of false and a description of what our flag means.

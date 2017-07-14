@@ -8,6 +8,11 @@ keywords:
 - golang
 - golang documentation
 - golang examples
+tags:
+- go
+- golang
+- golang documentation
+- golang examples
 comments: true
 date: '2013-08-29'
 title: Golang Documenting Package Examples
@@ -15,23 +20,24 @@ description: Example of documenting golang packages
 url: /2013/08/29/golang-documenting-package-examples
 ---
 
-
 [Go](http://golang.org/) has been gaining a lot of popularity recently. With a
 lot of the success stories centered on the performance gains switching from
 other languages. For me a lot of the smaller features, that shows an attention
-to detail, which makes it enjoyable to code in. These details are also what
-will help the Golang community grow as well. One of these details is the built
-in documentation into the language.
+to detail, which makes it enjoyable to code in.
+
+<!--more-->
+
+These details are also what will help the Golang community grow as well. One of
+these details is the built in documentation into the language.
 
 There is a built in `go doc` command with the language where you can view your
 package documentation locally by running an http server to serve your docs.
 [GoDoc](http://godoc.org/) is the main hosting for open source packages that
 will build docs for your package by doing a `go get` and generating docs.
-<!--more-->
 Locally you can run `go doc` from your package to display the docs in your
 terminal.
 
-{{<highlight go>}}
+```go
 $ cd $GOPATH/src/github.com/mtchavez/go-statsite/statsite
 $ go doc
 PACKAGE DOCUMENTATION
@@ -66,7 +72,7 @@ func NewClient(addr string) (client *Client, err error)
 func (c *Client) Emit(m Messenger) (bool, error)
 
 func (c *Client) Emitter(msg string) (ok bool, err error)
-{{</highlight>}}
+```
 
 Or you can view all the packages in your `$GOSRC` directory as well as the
 standard library code in your browser by running `godoc -http=:6060`. Then
@@ -90,7 +96,7 @@ fibonacci number generator package. And you want to show someone how to use it
 with an example. Lets add a `$GOPATH/src/fib` directory with a `fib.go` main
 package with the following:
 
-{{<highlight go>}}
+```go
 package fib
 
 import (
@@ -105,14 +111,14 @@ func fib(n int) int {
   }
   return fib(n-1) + fib(n-2)
 }
-{{</highlight>}}
+```
 
 Since we'll be expecting others to use our package we'll want to test it works
 as well as document how to use it. With examples we can do both in one shot.
 In our same `$GOPATH/src/fib` directory create a `fib_test.go` file. Lets add
 our example test.
 
-{{<highlight go>}}
+```go
 package fib
 
 import (
@@ -129,7 +135,7 @@ func Example() {
   // Fibonnacci of 10 is 55
   // Fibonnacci of 20 is 6765
 }
-{{</highlight>}}
+```
 
 Now from your `fib/` directory run `go test` and you should see some similar
 output:
@@ -164,7 +170,7 @@ of and want to show how one would use the function. The principal is the same
 except we change our `Example()` function name in our test. If we change our
 `fib.go` to this:
 
-{{<highlight go>}}
+```go
 
 package fib
 
@@ -190,12 +196,12 @@ func (f *FibStruct) Calculate(num int) {
   f.num = num
   f.result = fib(num)
 }
-{{</highlight>}}
+```
 
 Then we can add an example on how to use our new `Calculate()` method in
 `fib_test.go`.
 
-{{<highlight go>}}
+```go
 
 func ExampleFibStruct_Calculate() {
   f := FibStruct{}
@@ -208,7 +214,7 @@ func ExampleFibStruct_Calculate() {
   // Fibonacci of 10 is 55
   // Fibonacci of 20 is 6765
 }
-{{</highlight>}}
+```
 
 Running the tests again with `go test` should show everything passing. Last
 part to this is viewing your examples via `go doc` or on

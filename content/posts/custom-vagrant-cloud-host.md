@@ -6,6 +6,11 @@ keywords:
 - vagrant cloud
 - custom vagrant cloud host
 - vagrant box version
+tags:
+- vagrant
+- vagrant cloud
+- custom vagrant cloud host
+- vagrant box version
 comments: true
 date: '2015-01-31'
 title: Custom Vagrant Cloud Versioned Box Host
@@ -17,13 +22,16 @@ With the recent addition of [Atlas](https://atlas.hashicorp.com) to the [Hashico
 arsenal, [Vagrant](https://www.vagrantup.com) got an update to be integrated into Atlas for hosting your
 VM boxes and handling versioned updates. If you are still looking to have your boxes versioned
 and are hosting them yourself, or your company has them private, you can still achieve versioning
-your boxes with the latest Vagrant (1.7.2) and some manual work. In this post I will go through:
+your boxes with the latest Vagrant (1.7.2) and some manual work.
+
+<!--more-->
+
+In this post I will go through:
 
 >1. Basics of building a Virtualbox Vagrant box, just enough to follow along.
 >2. Building a box metadata file, used to resolve box versions and download URLs.
 >3. Hooking everything up with your Vagrantfile.
 
-<!--more-->
 ## Building a Box
 
 If this topic is new to you please review [the docs](https://docs.vagrantup.com/v2/boxes/base.html), as this is not a new part
@@ -33,7 +41,7 @@ in these examples.
 Please make sure you have the most recent Vagrant (1.7.2) and VirtualBox (4.3.20) beforehand.
 We will need a basic `Vagrantfile` to start out with, or you can use one of your own.
 
-{{<highlight ruby>}}
+```ruby
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
@@ -53,7 +61,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     v.customize opts
   end
 end
-{{</highlight>}}
+```
 
 This setup gives us an Ubuntu 64-bit Trusty box which will be pulled from Atlas to
 build our VM. Worth noting is the name of our VM in Virtualbox is set to `custom-box`.
@@ -86,7 +94,7 @@ versions available for a box and what providers the box is valid for. We will ne
 file in order to host our own versioned boxes outside of Vagrant Cloud. Here is an example
 metadata file:
 
-{{<highlight json>}}
+```json
 {
     "name": "custom-box",
     "description": "My Custom Ubuntu 14.04 64-bit Box",
@@ -105,7 +113,7 @@ metadata file:
         }
     ]
 }
-{{</highlight>}}
+```
 
 This example is defining a box which we have named `cusom-box`. This is equivalent to the
 base ubuntu box we used which was named `ubuntu/trusty64`. This could be named a little better
@@ -127,7 +135,7 @@ Vagrantfile.
 Firs we need to update our `Vagrantfile` so that it knows about our new versioned box we
 are hosting outside of Atlas.
 
-{{<highlight ruby>}}
+```ruby
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
@@ -148,7 +156,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     v.customize opts
   end
 end
-{{</highlight>}}
+```
 
 The changes to note here is we are using the name of our box now instead of the ubuntu name, `custom-box`.
 We also have added a `config.vm.box_url` pointing to our hosted box metadata file and the version

@@ -7,6 +7,11 @@ keywords:
 - ansible galaxy
 - ansible galaxy role testing
 - ansible test kitchen
+tags:
+- ansible
+- ansible galaxy
+- ansible galaxy role testing
+- ansible test kitchen
 comments: true
 date: '2016-02-16'
 title: Ansible Galaxy – Testing Roles with Test Kitchen
@@ -18,7 +23,11 @@ url: /2016/02/16/ansible-galaxy-test-kitchen
 under control. One of the key elements in Ansible is a `role`. There are public
 roles to get you started quickly with Ansible over at [Ansible Galaxy][2]. One
 thing Ansible is sort of lacking is a strong testing approach for open source
-roles. Other technologies like [Chef][3] have this approach to test drive the
+roles.
+
+<!--more-->
+
+Other technologies like [Chef][3] have this approach to test drive the
 code and tools that provision your infrastructure. Luckily there has been some
 work to extend some of those very tools to test your Ansible roles as well.
 
@@ -35,7 +44,7 @@ To get started we will need a handful of dependencies:
 First we can start by initializing bundler for the role with `bundler init`.
 Then we can add our dependencies to the `Gemfile`.
 
-{{<highlight ruby>}}
+```ruby
 source 'https://rubygems.org'
 
 group :test do
@@ -43,7 +52,7 @@ group :test do
   gem 'kitchen-docker'
   gem 'test-kitchen'
 end
-{{</highlight>}}
+```
 
 The dependencies here are adding [Test Kitchen][8] with the ansible and docker
 hooks since by default this is used with Chef and [Vagrant][9]. Make sure to
@@ -55,7 +64,7 @@ Once kitchen dependencies are installed we can initialize the role for the Test
 Kitchen with `bundle exec kitchen init`. This will create a `.kitchen.yml` file,
 which we want to update to be the following:
 
-{{<highlight yaml>}}
+```yaml
 ---
 
 driver:
@@ -76,7 +85,7 @@ suites:
       playbook: role.yml
       additional_copy_path:
         - "."
-{{</highlight>}}
+```
 
 The gist of what this is doing is telling kitchen to use the docker driver,
 with a platform of Ubuntu 14.04 LTS, a verifing step using the Ansiblespec plugin,
@@ -104,7 +113,7 @@ test/
 
 The `config.yml` file for the default suite should be filled out with this:
 
-{{<highlight yaml>}}
+```yaml
 ---
 
 -
@@ -113,12 +122,12 @@ The `config.yml` file for the default suite should be filled out with this:
   kitchen_path: "/tmp/kitchen"
   pattern: "spec"
   user: root
-{{</highlight>}}
+```
 
 Where the `role.yml` is a playbook in your Galaxy role that includes itself with
 variables and tasks.
 
-{{<highlight yaml>}}
+```yaml
 ---
 
 - name: Test my role
@@ -133,7 +142,7 @@ variables and tasks.
     - include: "tasks/main.yml"
   handlers:
     - include: "handlers/main.yml"
-{{</highlight>}}
+```
 
 **At time of writing this will break without the `roles` section!**
 
@@ -151,7 +160,7 @@ spec
 Where a `spec_helper.rb` would look something like this, minus any SSH setup which
 you can see more on at the [kitchen-ansible][10] repository.
 
-{{<highlight ruby>}}
+```ruby
 require 'rubygems'
 require 'bundler/setup'
 
@@ -163,11 +172,11 @@ RSpec.configure do
   set :host, ENV['TARGET_HOST']
   set :request_pty, true
 end
-{{</highlight>}}
+```
 
 A contrived `default_spec.rb` might look something like so:
 
-{{<highlight ruby>}}
+```ruby
 require_relative './spec_helper.rb'
 
 describe 'my galaxy role' do
@@ -195,7 +204,7 @@ describe 'my galaxy role' do
     it { should be_running }
   end
 end
-{{</highlight>}}
+```
 
 ## Running your role tests
 
