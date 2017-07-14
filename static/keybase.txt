@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/mtchavez
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://blog.el-chavez.me
+  * I am mtchavez (https://keybase.io/mtchavez) on keybase.
+  * I have a public key ASBAGEIKThZlH37M-aVHW1jJxQbQjNDC5n74-ItMJ59uTQo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101fa34276758ce6bb9a0dc3d7cb5e059645e211e2807195ea380805043f25ebfda0a",
+            "host": "keybase.io",
+            "kid": "01204018420a4e16651f7eccf9a5475b58c9c506d08cd0c2e67ef8f88b4c279f6e4d0a",
+            "uid": "0e1c3ba82bf51614ea88e981cc6e7119",
+            "username": "mtchavez"
+        },
+        "service": {
+            "hostname": "blog.el-chavez.me",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.16"
+    },
+    "ctime": 1469675517,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1469675178,
+        "hash": "e968b479708d00584fdbfad0353f58b437cba0c7a6360ccec467ce4a7d26c3e5c0f9e719169de6ef8dd5ddd6e0217f29fe92cb93c90378c75ecd70464ad36bcf",
+        "seqno": 545627
+    },
+    "prev": "35a9bfae4b0b4057a19a96671a80e946ffca830f0b86036501c007b3beb263f0",
+    "seqno": 21,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgQBhCCk4WZR9+zPmlR1tYycUG0IzQwuZ++PiLTCefbk0Kp3BheWxvYWTFAvl7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxZmEzNDI3Njc1OGNlNmJiOWEwZGMzZDdjYjVlMDU5NjQ1ZTIxMWUyODA3MTk1ZWEzODA4MDUwNDNmMjVlYmZkYTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwNDAxODQyMGE0ZTE2NjUxZjdlY2NmOWE1NDc1YjU4YzljNTA2ZDA4Y2QwYzJlNjdlZjhmODhiNGMyNzlmNmU0ZDBhIiwidWlkIjoiMGUxYzNiYTgyYmY1MTYxNGVhODhlOTgxY2M2ZTcxMTkiLCJ1c2VybmFtZSI6Im10Y2hhdmV6In0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJibG9nLmVsLWNoYXZlei5tZSIsInByb3RvY29sIjoiaHR0cDoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMTYifSwiY3RpbWUiOjE0Njk2NzU1MTcsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTQ2OTY3NTE3OCwiaGFzaCI6ImU5NjhiNDc5NzA4ZDAwNTg0ZmRiZmFkMDM1M2Y1OGI0MzdjYmEwYzdhNjM2MGNjZWM0NjdjZTRhN2QyNmMzZTVjMGY5ZTcxOTE2OWRlNmVmOGRkNWRkZDZlMDIxN2YyOWZlOTJjYjkzYzkwMzc4Yzc1ZWNkNzA0NjRhZDM2YmNmIiwic2Vxbm8iOjU0NTYyN30sInByZXYiOiIzNWE5YmZhZTRiMGI0MDU3YTE5YTk2NjcxYTgwZTk0NmZmY2E4MzBmMGI4NjAzNjUwMWMwMDdiM2JlYjI2M2YwIiwic2Vxbm8iOjIxLCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQNGIan+Nr1hBB+A9TYaMV72N/dsO9DauxKLLo+7v2nA9mQ5XdbVaNxygEznDLxzkXgxdhB01VDGTnBCBqsD1MgCoc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCC/RnAGJaJCcuLaednCpk0ZtOcL//nI7JS5eTjhH/Lqb6N0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mtchavez
+
+==================================================================
