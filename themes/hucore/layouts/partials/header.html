@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#FFF"/>
 <meta content="{{ .Site.Params.Author }}" name="author">
 
 <title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
@@ -14,21 +15,12 @@
 <meta name="google-site-verification" content="NumfJOVPLhr7CP-nrCzKrkr6wdNtFW_4oyo3IagikeQ" />
 <meta content="{{ delimit .Keywords ", " }}" name="keywords">
 
-<!-- enable inline math equations-->
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      processEscapes: true
-    }
-  });
-</script>
-<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/style.css">
+<link rel="stylesheet" media="screen" href="{{ .Site.BaseURL }}/css/style.css">
 <link rel="shortcut icon" href="{{ .Site.BaseURL }}/images/logo.png">
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+<link rel="stylesheet" media="screen" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
 {{ with .Site.Params.highlight.style }}
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/{{ . }}.min.css">
+<link rel="stylesheet" media="screen" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/{{ . }}.min.css">
 {{ else }}
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css" integrity="sha256-Zd1icfZ72UBmsId/mUcagrmN7IN5Qkrvh75ICHIQVTk=" crossorigin="anonymous" />
+<link rel="stylesheet" media="screen" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css" integrity="sha256-Zd1icfZ72UBmsId/mUcagrmN7IN5Qkrvh75ICHIQVTk=" crossorigin="anonymous" />
 {{ end }}
 </head>

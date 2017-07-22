@@ -42,5 +42,5 @@ url     = "https://gitlab.com/mtchavez"
 fa_icon = "fa-gitlab"
 
 [[params.social]]
-url     = "/index.xml"
+url     = "//blog.el-chavez.me/index.xml"
 fa_icon = "fa-rss"
