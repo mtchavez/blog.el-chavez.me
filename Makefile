@@ -6,7 +6,7 @@ all:
 	hugo server --theme $(HUGO_THEME) --watch --buildDrafts true
 
 release:
-	hugo -d deploy --theme=$(HUGO_THEME) && \
+	hugo -d deploy --cleanDestinationDir --theme=$(HUGO_THEME) && \
 		cd deploy && \
 		aws s3 sync . s3://$(S3_BUCKET) --region $(AWS_DEFAULT_REGION) --delete
 
