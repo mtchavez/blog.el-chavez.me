@@ -331,3 +331,5 @@ and [continuous deployment][gitlab-cd].
 [hex]: https://hex.pm
 [mix]: https://elixir-lang.org/getting-started/mix-otp/introduction-to-mix.html
 [phoenix]: http://www.phoenixframework.org
+[travis]: https://travisci.org
+[circle]: http://circleci.com
