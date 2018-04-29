@@ -115,6 +115,8 @@ the way.
 > (2): https://www.psychologytoday.com/us/blog/what-matters-most/201409/the-many-benefits-showing-appreciation_
 
 
+[basecamp]: https://basecamp.com
 [retro]: https://www.agilealliance.org/glossary/heartbeatretro/
+[slack]: https://slack.com
 [1]: https://www.emergenetics.com/blog/workplace-appreciation-gratitude/
 [2]: https://www.psychologytoday.com/us/blog/what-matters-most/201409/the-many-benefits-showing-appreciation
