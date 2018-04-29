@@ -94,7 +94,7 @@ does the opposite. We are already in a world of over-consumption and you end up
 just added to the noise with the over appreciation of small or common things.
 
 Another common negative effect is forcing or requiring appreciations onto the team.
-This can end up leaving some members feel like it is just another part of the
+This can end up leaving some members feeling like it is just another part of the
 job requirements and I have seen the appreciations end up being less genuine and
 more run of the mill. This cheapens the purpose of doing appreciations in the
 first place and others will pick up on this quickly.
@@ -102,8 +102,8 @@ first place and others will pick up on this quickly.
 ## Be Mindful
 
 Even though there are potential pitfalls and negative effects it is more common
-to have yourself and those around you benefit from this simple practice. If you
-and those you do this with are genuine and are mindful when someone can use an
+to have yourself and those around you benefit from this simple practice. If you,
+and whomever you practice this with, are genuine and are mindful when someone can use an
 appreciation there will most likely be a majority of positive effects.
 Appreciations, like a lot of other things in life, benefit from moderation and
 if you focus on quality, meaningful, and pure intentioned over quantity and
