@@ -1,7 +1,7 @@
 ---
 categories:
 - ruby
-- TIL
+- til
 - programming languages
 keywords:
 - ruby
@@ -10,7 +10,7 @@ keywords:
 - cannot get the last element of endless range
 tags:
 - ruby
-- TIL
+- til
 - programming languages
 comments: true
 date: '2019-03-08'
