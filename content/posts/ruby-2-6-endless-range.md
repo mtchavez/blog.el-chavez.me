@@ -27,6 +27,7 @@ RangeError (cannot get the last element of endless range)
 
 The code that was updated to the latest ruby 2.6 release had a dynamic range
 that was pulling fields from a database and doing something like this:
+<!--more-->
 
 ```ruby
 post = Post.where(commentable: true)
