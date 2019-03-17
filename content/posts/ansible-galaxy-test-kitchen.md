@@ -2,16 +2,22 @@
 categories:
 - ansible
 - testing
+- devops
+- infrastructure as code
 keywords:
 - ansible
 - ansible galaxy
 - ansible galaxy role testing
 - ansible test kitchen
+- devops
+- infrastructure as code
 tags:
 - ansible
 - ansible galaxy
 - ansible galaxy role testing
 - ansible test kitchen
+- devops
+- infrastructure as code
 comments: true
 date: '2016-02-16'
 title: Ansible Galaxy – Testing Roles with Test Kitchen
