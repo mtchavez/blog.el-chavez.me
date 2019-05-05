@@ -17,7 +17,7 @@ comments: true
 date: '2019-05-05'
 title: Golang Printing Tabstopped Text into Aligned Columns
 description:
-url: /2019/04/01/golang-testing-time-now
+url: /2019/05/05/golang-tabwriter-aligned-text
 ---
 One of the strengths of [Golang][golang] as a language is it has a pretty strong standard
 library of packages out of the box. Things like the [httptest][httptest] package and
