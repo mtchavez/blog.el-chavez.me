@@ -15,7 +15,7 @@ tags:
 - devops
 - infrastructure as code
 comments: true
-date: '2019-07-20'
+date: '2019-07-29'
 title: Terraform CI/CD
 description: A CI/CD Approach To Terraform
 url: /2019/07/29/terraform-ci-cd-approach
