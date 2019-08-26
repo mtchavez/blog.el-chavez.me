@@ -1,0 +1,14 @@
+<section class="categories-menu">
+  <h2>Categories</h2>
+  <ul>
+      {{ range $key, $taxonomy := .Site.Taxonomies.categories }}
+          {{ with $total := len $taxonomy.Pages }}
+                <li>
+                  <a href="/categories/{{ $key }}">
+                    {{ $key }} ({{ $total }})
+                  </a>
+                </li>
+          {{ end }}
+      {{ end }}
+  </ul>
+</section>

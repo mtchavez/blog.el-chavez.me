@@ -1,7 +1,7 @@
 {{ partial "header" . }}
 {{ partial "nav" . }}
 <section class="section">
-  <div class="container">
+  <div class="container list">
     {{ range sort .Paginator.Pages }}
     <article>
       <h1 class="title"><a href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }} ::Draft{{ end }}</h1>

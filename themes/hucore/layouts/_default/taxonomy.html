@@ -1,0 +1,18 @@
+{{ partial "header" . }}
+{{ partial "nav" . }}
+<section class="section">
+  <div class="container">
+    <article>
+      <h1 class="title">{{ .Title }}</h1>
+    <!-- ranges through each of the content files associated with a particular taxonomy term and renders the summary.html content view -->
+      {{ range .Pages }}
+        <li hugo-nav="{{ .RelPermalink}}">
+            <a href="{{ .Permalink}}">{{ .LinkTitle }}</a>
+
+            <span>- {{ .Date.Format "January 2, 2006" }}</span>
+        </li>
+      {{ end }}
+    </article>
+  </div>
+</section>
+{{ partial "footer" . }}
