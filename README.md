@@ -1,3 +1,3 @@
 # Personal Blog
 
-Blog at http://blog.el-chavez.me
+Blog at https://blog.el-chavez.me

@@ -19,6 +19,7 @@ date: '2019-07-29'
 title: Terraform CI/CD
 description: A CI/CD Approach To Terraform
 url: /2019/07/29/terraform-ci-cd-approach
+featured_image: images/featured/continuous.jpg
 ---
 [Terraform][terraform] helps in creating cross-cloud immutable infrastructure with code.
 As with most code there is an ideal of having your codebase automated with tests and deploys.

@@ -1,46 +1,114 @@
 baseurl            = "https://blog.el-chavez.me"
 languageCode       = "en-us"
 title              = "Chavez Blog"
-author             = "mtchavez"
-disablePathToLower = true
-theme              = "Hucore"
+theme              = "ananke"
 googleAnalytics    = "UA-40822664-1"
-
-[taxonomies]
-tag      = "tags"
-category = "categories"
+enableRobotsTXT    = true
+Paginate           = 9
 
 [params]
-description  = "Technical related blog posts by github.com/mtchavez"
-author       = "mtchavez"
-languageCode = "en-us"
-logo         = "/images/logo.png"
-copyright    = "mtchavez All rights reserved."
-github       = "https://github.com/mtchavez/"
-email        = "contact@el-chavez.me"
-analytics    = "UA-40822664-1"
+custom_css = ["css/theme-override.css"]
+site_logo = "images/el-chavez.svg"
+favicon = "images/favicon.ico"
 
-[params.highlight]
-style     = "solarized-dark"
-languages = [
-  "bash",
-  "dockerfile",
-  "elixir",
-  "go",
-  "javascript",
-  "json",
-  "ruby",
-  "yaml"
-]
+[markup.highlight]
+anchorLineNos = false
+codeFences = true
+guessSyntax = false
+hl_Lines = ''
+hl_inline = false
+lineAnchors = ''
+lineNoStart = 1
+lineNos = false
+lineNumbersInTable = true
+noClasses = true
+noHl = false
+style = 'onedark'
+tabWidth = 4
 
-[[params.social]]
-url     = "https://github.com/mtchavez"
-fa_icon = "fa-github"
+[[params.ananke_socials]]
+name = "gitlab"
+url = "https://gitlab.com/mtchavez"
+label = "Gitlab - mtchavez"
+color = "#E46B60"
 
-[[params.social]]
-url     = "https://gitlab.com/mtchavez"
-fa_icon = "fa-gitlab"
+[[params.ananke_socials]]
+name = "github"
+url = "https://github.com/mtchavez"
+label = "Github - mtchavez"
+color = "#E46B60"
 
-[[params.social]]
-url     = "//blog.el-chavez.me/index.xml"
-fa_icon = "fa-rss"
+[[params.ananke_socials]]
+name = "rss"
+url = "/index.xml"
+label = "RSS Feed"
+color = "#E46B60"
+
+#
+# Deployment
+#
+[deployment]
+# By default, files are uploaded in an arbitrary order.
+# Files that match the regular expressions in the "Order" list
+# will be uploaded first, in the listed order.
+#order = [".jpg$", ".gif$"]
+
+
+[[deployment.targets]]
+# An arbitrary name for this target.
+name = "s3"
+# The Go Cloud Development Kit URL to deploy to. Examples:
+# GCS; see https://gocloud.dev/howto/blob/#gcs
+# URL = "gs://<Bucket Name>"
+
+# S3; see https://gocloud.dev/howto/blob/#s3
+# For S3-compatible endpoints, see https://gocloud.dev/howto/blob/#s3-compatible
+ URL = "s3://blog.el-chavez.me?region=us-west-2"
+
+# Azure Blob Storage; see https://gocloud.dev/howto/blob/#azure
+# URL = "azblob://$web"
+
+# You can use a "prefix=" query parameter to target a subfolder of the bucket:
+# URL = "gs://<Bucket Name>?prefix=a/subfolder/"
+
+# If you are using a CloudFront CDN, deploy will invalidate the cache as needed.
+cloudFrontDistributionID = "E1V6NOLTO3CTVV"
+
+# Optionally, you can include or exclude specific files.
+# See https://godoc.org/github.com/gobwas/glob#Glob for the glob pattern syntax.
+# If non-empty, the pattern is matched against the local path.
+# All paths are matched against in their filepath.ToSlash form.
+# If exclude is non-empty, and a local or remote file's path matches it, that file is not synced.
+# If include is non-empty, and a local or remote file's path does not match it, that file is not synced.
+# As a result, local files that don't pass the include/exclude filters are not uploaded to remote,
+# and remote files that don't pass the include/exclude filters are not deleted.
+# include = "**.html" # would only include files with ".html" suffix
+# exclude = "**.{jpg, png}" # would exclude files with ".jpg" or ".png" suffix
+
+
+# [[deployment.matchers]] configure behavior for files that match the Pattern.
+# See https://golang.org/pkg/regexp/syntax/ for pattern syntax.
+# Pattern searching is stopped on first match.
+
+# Samples:
+
+[[deployment.matchers]]
+# Cache static assets for 1 year.
+pattern = "^.+\\.(js|css|svg|ttf)$"
+cacheControl = "max-age=31536000, no-transform, public"
+gzip = true
+
+[[deployment.matchers]]
+pattern = "^.+\\.(png|jpg)$"
+cacheControl = "max-age=31536000, no-transform, public"
+gzip = false
+
+[[deployment.matchers]]
+# Set custom content type for /sitemap.xml
+pattern = "^sitemap\\.xml$"
+contentType = "application/xml"
+gzip = true
+
+[[deployment.matchers]]
+pattern = "^.+\\.(html|xml|json)$"
+gzip = true
