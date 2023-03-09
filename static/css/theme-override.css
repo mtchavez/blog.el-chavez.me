@@ -1,0 +1,44 @@
+main {
+    background-color: #F4F2ED;
+}
+
+p code {
+    /*background-color: #282c34;*/
+    /*color: #e06c75;*/
+    /*padding: 0 5px 0 5px;*/
+    color: #eee;
+    background-color: #222;
+    font-size: 0.9em;
+    padding: 0px 5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: black;
+}
+
+header time {
+    color: #2E4051;
+    text-transform: uppercase;
+    font-size: 1rem !important;
+}
+
+aside .nested-links {
+    background-color: rgb(206, 218, 240, 0.5); /*#CBDAF2;*/
+}
+
+.nested-links a {
+    color: #E46B60 !important;
+    text-decoration: none;
+}
+.nested-links a:hover {
+     color: #E46B60 !important;
+     text-decoration: underline;
+ }
+
+nav a.f3, nav a.f3 img {
+    max-width: 3rem !important;
+}
+
+article .f4 {
+    font-size: 1.1em;
+}
