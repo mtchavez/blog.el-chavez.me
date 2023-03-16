@@ -15,6 +15,11 @@ tags:
 - testing
 - gitlab-ci
 - phoenix framework
+series:
+- elixir
+- gitlab
+- testing
+- ci-cd
 comments: true
 date: '2017-07-13'
 title: Elixir/Phoenix with GitlabCI

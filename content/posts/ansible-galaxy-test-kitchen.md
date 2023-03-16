@@ -18,6 +18,10 @@ tags:
 - ansible test kitchen
 - devops
 - infrastructure as code
+series:
+- ansible
+- devops
+- infrastructure as code
 comments: true
 date: '2016-02-16'
 title: Ansible Galaxy – Testing Roles with Test Kitchen

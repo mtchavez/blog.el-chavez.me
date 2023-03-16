@@ -15,12 +15,18 @@ tags:
 - serverless
 - lambda
 - aws
+series:
+- til
+- serverless
+- aws
 comments: true
 date: '2019-08-12'
 title: Serverless Events with Existing S3 Bucket
 description: Serverless AWS S3 events with an existing bucket. When you have a bucket already and can't delete the contents you still have an option with serverless to re-use that bucket.
 url: /2019/08/12/serverless-events-existing-s3-bucket
 featured_image: images/featured/server.jpg
+images:
+- images/featured/server.jpg
 ---
 [Serverless](https://serverless.com) helps you with [functions as a service](https://en.wikipedia.org/wiki/Function_as_a_service) across multiple providers.
 Using serverless with [AWS](https://aws.amazon.com) allows you to tie these functions

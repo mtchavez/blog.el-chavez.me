@@ -12,6 +12,9 @@ keywords:
 tags:
 - golang
 - testing
+series:
+- golang
+- testing
 comments: true
 date: '2019-04-01'
 title: Golang Testing time.Now

@@ -12,6 +12,8 @@ tags:
 - golang
 - golang flag
 - golang versioning
+series:
+- golang
 comments: true
 date: '2013-06-04'
 title: Golang Package Version Flag

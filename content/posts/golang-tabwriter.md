@@ -13,6 +13,8 @@ tags:
 - golang tabwriter
 - golang print aligned text
 - golang pkg
+series:
+- golang
 comments: true
 date: '2019-05-05'
 title: Golang Printing Tabstopped Text into Aligned Columns

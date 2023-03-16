@@ -1,12 +1,18 @@
 ---
 categories:
 - hugo
+- seo
 keywords:
 - hugo
 - hugo seo
+- seo
 tags:
 - hugo
 - hugo seo
+- seo
+series:
+- hugo
+- seo
 comments: true
 date: '2015-11-26'
 title: Go Hugo SEO

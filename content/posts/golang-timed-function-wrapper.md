@@ -12,6 +12,8 @@ tags:
 - golang
 - golang timing
 - golang interfaces
+series:
+- golang
 comments: true
 date: '2013-08-09'
 title: Golang Timed Function Wrapper

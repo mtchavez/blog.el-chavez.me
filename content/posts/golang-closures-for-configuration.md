@@ -11,12 +11,17 @@ keywords:
 tags:
 - golang
 - refactoring
+series:
+- golang
+- refactoring
 comments: true
 date: '2019-08-25'
 title: Golang Closures For Configuration
 description: Using closures to refactor your struct configuration in golang.
 url: /2019/08/25/golang-closures-for-configuration
 featured_image: images/featured/config.jpg
+images:
+- images/featured/config.jpg
 ---
 One common code smell is creating functions with a long list of parameters. Adding
 a new function usually starts out optimistically with a few inputs or known state

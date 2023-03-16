@@ -14,6 +14,10 @@ tags:
 - terraform
 - devops
 - infrastructure as code
+series:
+- terraform
+- devops
+- infrastructure as code
 comments: true
 date: '2018-06-17'
 title: Terraform Conditionals

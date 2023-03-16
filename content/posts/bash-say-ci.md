@@ -11,6 +11,9 @@ tags:
 - til
 - bash
 - ci
+series:
+- til
+- ci-cd
 comments: true
 date: '2019-04-08'
 title: Bash Say Command In CI

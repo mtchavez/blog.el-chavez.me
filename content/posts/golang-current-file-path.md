@@ -2,12 +2,18 @@
 categories:
 - go
 - golang
+- til
 keywords:
 - go
 - golang
+- til
 tags:
 - go
 - golang
+- til
+series:
+- golang
+- til
 comments: true
 date: '2013-05-17'
 title: Golang Current File Path

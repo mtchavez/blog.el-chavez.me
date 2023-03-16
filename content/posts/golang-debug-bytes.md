@@ -12,12 +12,17 @@ keywords:
 tags:
 - golang
 - til
+series:
+- golang
+- til
 comments: true
 date: '2019-08-02'
 title: Golang Debug Bytes
 description: Golang debugging your bytes and byte buffers.
 url: /2019/08/02/golang-debug-bytes
 featured_image: images/featured/debug.jpg
+images:
+- images/featured/debug.jpg
 ---
 When working with raw [bytes][bytes] in [Golang][golang] it can be
 a little difficult to debug. If you are new to the language or just

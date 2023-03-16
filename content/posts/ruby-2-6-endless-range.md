@@ -12,12 +12,17 @@ tags:
 - ruby
 - til
 - programming languages
+series:
+- ruby
+- til
 comments: true
 date: '2019-03-08'
 title: Ruby 2.6 Endless Range
 description: Endless ranges in ruby 2.6 and how to update your previous ruby code to use them.
 url: /2019/03/08/ruby-2-6-endless-range
 featured_image: images/featured/ruby.jpg
+images:
+- images/featured/ruby.jpg
 ---
 For a _today I learned_ moment I ran into the new endless range feature in ruby
 2.6 by coming across some code that triggered this error message:

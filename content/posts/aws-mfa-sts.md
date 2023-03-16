@@ -14,6 +14,10 @@ tags:
 - aws
 - security
 - aws cli tools
+series:
+- aws
+- security
+- developer tools
 comments: true
 date: '2018-05-02'
 title: AWS with STS for MFA Required Access

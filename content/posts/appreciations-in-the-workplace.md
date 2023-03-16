@@ -20,6 +20,11 @@ tags:
 - retrospectives
 - agile retrospectives
 - agile teams
+series:
+- agile
+- retrospectives
+- work culture
+- team culture
 comments: true
 date: '2018-04-28'
 title: Appreciations In The Workplace

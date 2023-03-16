@@ -13,6 +13,9 @@ tags:
 - bash to fish
 - fishshell fisherman
 - developer tools
+series:
+- fishshell
+- developer tools
 comments: true
 date: '2018-05-22'
 title: Switching From Bash To Fish

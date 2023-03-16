@@ -11,6 +11,9 @@ tags:
 - vagrant cloud
 - custom vagrant cloud host
 - vagrant box version
+series:
+- vagrant
+- developer tools
 comments: true
 date: '2015-01-31'
 title: Custom Vagrant Cloud Versioned Box Host

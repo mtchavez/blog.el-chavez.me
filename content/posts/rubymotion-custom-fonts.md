@@ -2,18 +2,26 @@
 categories:
 - rubymotion
 - iOS
+- mobile
 keywords:
 - rubymotion
 - ruby
 - iOS
 - UIFont
 - rubymotion fonts
+- mobile
 tags:
 - rubymotion
 - ruby
 - iOS
 - UIFont
 - rubymotion fonts
+- mobile
+series:
+- ruby
+- iOS
+- mobile
+- rubymotion
 comments: true
 date: '2013-03-26'
 title: Rubymotion Custom Fonts

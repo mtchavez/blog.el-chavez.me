@@ -13,6 +13,10 @@ tags:
 - til
 - testing
 - js
+series:
+- til
+- js
+- testing
 comments: true
 date: '2019-03-14'
 title: Momentjs Date Mutation

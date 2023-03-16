@@ -13,6 +13,10 @@ tags:
 - golang
 - golang documentation
 - golang examples
+series:
+- golang
+- golang examples
+- golang documentation
 comments: true
 date: '2013-08-29'
 title: Golang Documenting Package Examples
