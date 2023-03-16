@@ -10,7 +10,7 @@ Paginate           = 9
 custom_css = ["css/theme-override.css"]
 site_logo = "images/el-chavez.svg"
 favicon = "images/favicon.ico"
-images = ["images/el-chavez.svg"]
+images = ["images/og-default.png"]
 
 [markup.highlight]
 anchorLineNos = false
